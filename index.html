@@ -281,8 +281,8 @@
                         bgMusic.play().then(() => {
                         }).catch(e => {
                             setTimeout(() => {
-                                // bgMusic.play();
-                            }, 100);
+                                bgMusic.play();
+                            }, 1000);
                         });
                         
                         resizeBackground();
@@ -293,8 +293,7 @@
                         splashScreen.style.display = 'none';
                         mainContent.style.display = 'block';
                         resizeBackground();
-                        setTimeout(() => {console.log('wait')}, 1000);
-                        // bgMusic.play();
+                        setTimeout(() => {bgMusic.play()}, 1000);
                     }, 5000);
                 });
             };
